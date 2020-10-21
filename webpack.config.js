@@ -1,5 +1,6 @@
 const path =require('path');
 const webpack=require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports= {
     entry:'./src/js/app.js',
@@ -16,7 +17,24 @@ module.exports= {
                     'css-loader',
                     'sass-loader,'
                 ]
+
             },
+            {
+                test: /\.html$/,
+                use: 'raw-loader'
+            }
         ]
-    }
-}
+    },
+    devServer: {
+        contentBase: ['./'],
+        watchContentBase:true,
+        open:true,
+        hot:true
+    },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin(),
+        new HtmlWebpackPlugin({
+            template: './src/index.html'
+        })
+    ]
+};
