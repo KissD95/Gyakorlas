@@ -1,354 +1,98 @@
 @import 'variables';
 
 
+
 body {
-    width:100%;
-    height: 100%;
-    margin:0 auto;
-    font-family: 'Source Sans Pro', sans-serif;
-}
 
-
-.header {
-    padding-bottom: 8rem;
-    padding-top: 8rem;
-    width: 100%;
-    height: auto;   
-    min-height: 31rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: $headerbg-img;  
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    div {
-        text-align: center;
-        margin:0 auto;
-        h1 {
-            font-size: 5.3rem;
-            line-height: 0.2;
-            font-weight: 600;
-            letter-spacing: -0.01em;
-        }
-        h3 {
-            font-size: 1.7rem;
-            line-height: 0.5;
-            letter-spacing:0.01em;
-            font-weight: 700;
-            font-style: italic;
-        }
-    }
-   button {
-        background-color: $buttonbg-color;
-        padding:1.4rem 2.5rem;
-       border:1px solid $buttonbg-color;
-        box-shadow: none;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 1rem;
-        font-weight: 800;
-        margin-top: 2rem;
-        color:$buttonfont-color;
-        border-radius: 0.28em;
-        transition: 150ms;
-        
-   }
-   button:hover {
-       background-color: $buttonhoverbg-color;
-   }
-    
-}
-
-.section1 {
-        padding-top: 7.5rem;
-        padding-bottom: 7.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: $section1bg-color;
-    div {
-        text-align: center;
-    }
-    h1 {
-        font-size: 1.85rem;
-        line-height:0.5;
-    }
-    p{
-        font-size: 1.1rem;
-        letter-spacing: 0.005em;
-        font-weight: 300;
-    }
-    button {
-        background-color: $section1btnbg-color;
-        padding:1.4rem 2.5rem;
-       border:1px solid $section1btnbg-color;
-        box-shadow: none;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 1rem;
-        font-weight: 800;
-        margin-top: 2rem;
-        color:$buttonfont-color;
-        border-radius: 0.28em;
-        transition: 150ms;
-    }
-    button:hover {
-        background-color: $section1btnhoverbg-color;
-    }
-}
-
-.section2 {
-    background-color: $section2bg-color;
-    text-align: center;
-    padding-bottom: 8rem;
-    padding-top: 8rem;
-    .section2head {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 4rem;
-        
-        h3 {
-            color:$section2h3-color;
-            line-height: 0.01;
-            margin-bottom: 0;
-            
-        }
-        h2 {
-            color:#fff;
-            line-height: 0.01;
-            font-size: 3rem;
-        }
-    }
-    .section2body {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        text-align: center;
-        width:80%;
-        margin:0 auto;
-        div {
-           width:20%;
-            
-            
-            span {
-                background-color:#fff;
-                border-radius: 50%;
-                padding: 3rem;
-                text-align: center;
-                
-                i{
-                    color:$buttonbg-color;
-                    font-size: 2rem;
-                }
-                
-            }
-            h4 {
-                margin-top: 5rem;
-                color:#fff;
-                font-size:1.4rem;
-                line-height: 0.01em;
-            }
-            p {
-                color:#b8dee9;
-                line-height: 0.01em;
-            }
-        }
-    }
-}
- 
-.section3 {
-    padding-bottom: 8rem;
-    padding-top: 6.7rem;
-    width: 100%;
-    height: auto;   
-    min-height: 31rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: $section3bg-img;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    h2 {
-        font-size: 3.5rem;
+    font-family: 'Vollkorn', serif;
     font-weight: 700;
-    display: block;
-    max-width: 30rem;
-    }
-
-    button {
-        background-color: $buttonbg-color;
-        padding:1.4rem 2.5rem;
-        border:1px solid $buttonbg-color;
-        box-shadow: none;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 1rem;
-        font-weight: 800;
-        margin-top:0;
-        color:$buttonfont-color;
-        border-radius: 0.28em;
-        transition: 150ms;
-        
-   }
-   button:hover {
-       background-color: $buttonhoverbg-color;
-   }
 }
-.section4 {
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+.container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: $section1bg-color;
-    .section4head {
+    flex-direction: row;
+    height: 98vh;
+    
+
+    .leftSideContent {
+        height: 100%;
+        width:5%;
+        border-right: 1px solid black;
         text-align: center;
-        margin-bottom: 1rem;
-        h3 {
-            line-height: 1.2;
-            margin-bottom: 0.1rem;
-            color: $section2h3-color;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            font-weight: 700;
+        .icon {
+            margin-top: 2rem;
+            
         }
-        h2 {
-            margin-top: 0;
-            font-size: 3rem;
-            font-weight: 700;
-            letter-spacing: 0.03em;            
+        .leftContentBtnDiv {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            button {
+                padding:1rem 0.7rem;
+                border-radius: 15px;
+                border:none;
+            }
         }
         
     }
-    .section4body {
-       display: flex;
-       flex-wrap: wrap;
-       width:85%;
-       justify-content: center;
-       text-align: center;
-       div {
-           width:45%;
-          
-           display: inline;
-           img{
-               width:100%;
-               height: 100%;
-               margin:0;
-               padding: 0;
-               transition: 0.3s;
-               
-               
-           }
-           img:hover {
-            transform: scale(0.85);
-           opacity: 0.5;
-           
-           }
-       }
-           
-         
-       
-        
-      }
-}
-.section5 {
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: $section2bg-color;
-    text-align: center;
+    .foodNav {
 
-    h1 {
-        color:#fff;
-        margin-bottom: 0;
-    }
-    .section5btns{
+    
+    nav {
+        width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        width:80%;
-        margin:0 auto;
-        margin-top: 0;
+        position: absolute;
+        justify-content: start;
         
-        .buttonleft {
-            background-color: $section1bg-color;
-            padding:1.4rem 2.5rem;
-           border:1px solid $buttonbg-color;
-            box-shadow: none;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 1rem;
-            font-weight: 800;
+        ul {
+            display: flex;
+            flex-direction: row;
             margin-top: 2rem;
-            color:#000000;
-            border-radius: 0.28em;
-            transition: 150ms;
-            margin-right: 1.8rem;
+    
+         li {
+            list-style-type: none;
+             margin-right: 4rem;
+             &:hover {
+                 color: $navLinkhover-color;
+             }
+            }
+        }
+
+        .buttonsDiv {
             
-        }
-        .buttonright {
-            background-color: $section1btnbg-color; 
-            padding:1.4rem 2.5rem;
-           border:1px solid $buttonbg-color;
-            box-shadow: none;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 1rem;
-            font-weight: 800;
-            margin-top: 2rem;
-            color:$buttonfont-color;
-            border-radius: 0.28em;
-            transition: 150ms;
+            display:flex;
+            margin-top: 1rem;
             
-        }
-        .buttonleft:hover {
-            background-color: #e2e6ea;
-        }
-        .buttonright:hover {
-            background-color: $section1btnhoverbg-color;
+            .navBtn {
+                padding: 1rem;
+                width:9rem;
+                margin-right: 1rem;
+                border-radius: 15px;
+                border:none;
+                font-family: 'Vollkorn', serif;
+                font-weight: 700;
+                font-size: 1rem;
+                outline: none;
+                }
+
+            .btnLogin {
+                background-color: $btnLoginbg-color;
+                color:$btnLoginfont-color;
+                
+                }
+               
+
+            .btnSignup {
+                color:$btnLoginbg-color;
+                background-color: $btnSignupbg-color;
+                }
+            }
         }
     }
+        
 }
 
-.section6 {
-    
-    padding-top: 8rem;
-        padding-bottom: 8rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: $section1bg-color;
-        margin:0 auto;
-       
-        
-        .section6spans {
-         text-align: center;
-         width:20%;
-        
-        
-            span {
-                background-color: $buttonbg-color;
-                border-radius: 50%;
-                padding: 1.5rem;
-                text-align: center;
-                margin-right: 2rem;
-                width: 1rem;
-    
-                i{
-                    color:#fff;
-                    font-size: 1rem;
-                }
-                
-            }
-        }    
-}
+
+
