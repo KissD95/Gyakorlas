@@ -3,6 +3,7 @@
 
 html {
     height: 100%;
+  
    
 }
 
@@ -44,6 +45,24 @@ body {
                 border-radius: 13px;
             }
         }
+    }
+}
+.dots {
+                    
+    .dot{
+        cursor: pointer;
+        height: 6px;
+        width: 6px;
+        margin: 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        
+        &:hover {
+            background-color: $btnLoginbg-color;
+            
+        }
+        
     }
 }
 
@@ -125,6 +144,8 @@ body {
             border:1px solid lightgrey;
             border-radius: 15px;
             height: 100%;
+            font-family: 'Noto Serif', serif;
+
 
             .mainFoodCardContent {
                 margin:1.5rem;
@@ -132,34 +153,87 @@ body {
                 height:90%;
                 
 
-                .dots {
-                    
-                    .dot{
-                        cursor: pointer;
-                        height: 7px;
-                        width: 7px;
-                        margin: 0 2px;
-                        background-color: #bbb;
-                        border-radius: 50%;
-                        display: inline-block;
-                        
-                        &:hover {
-                            background-color: $btnLoginbg-color;
-                            
-                        }
-                        
-                    }
-                }
+               
 
                 .mainFoodCardImage {
                     display: flex;
                     justify-content: center;
-                    margin-top: 0;
+                    margin:0 auto;
+                    width:100%;
+                    img {
+                        width:80%;
+                        margin-bottom: 0;
+                    }
+                    
                 }
+                h1{
+                    margin-top: 0;
+                    
+                }
+                .mainFoodCardDatas{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: -0.5rem;
+                    width:100%;
+                    span {
+                        border:1px solid lightgrey;
+                        padding:0.4rem 1.4rem;
+                        border-radius: 13px;
+                        flex-grow: inherit;
+                        
+                    }
+                }
+                .mainFoodCardFooter {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width:100%;
+                    
+                    .counter {
+                        display:flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        background-color: $counterBtnbg-color;
+                        width:12%;
+                        padding: 0.5rem;
+                        border-radius: 10px;
+                    }
+                    
+                    .order {
+                        display:flex;
+                        flex-direction: row;
+                        align-items: center;
+
+                        .price {
+                            font-size: 1.5rem;
+                            margin-right: 1.2rem;
+                        }
+                        .orderBtn {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            background-color: rgb(198, 228, 198);
+                            color:green;
+                            padding:0.5rem;
+                            padding-right: 1rem;
+                            border-radius: 10px;
+                            
+                            i {
+                                margin-right: 2rem;
+                                border-right: green dotted 3px;
+                                padding-right: 1rem;
+                            }
+                        }
+                    }
+                }
+                
                 
             }
             
         }
+        
+       
+       
         .foodCards {
             display: flex;
             flex-direction: column;
@@ -167,6 +241,7 @@ body {
             width: 48.5%;
             height: 100%;
             border-radius: 15px;
+            font-family: 'Noto Serif', serif;
             
             .foodCardsFirstRow {
                 display: flex;
@@ -192,9 +267,71 @@ body {
 
                 .foodCardContent {
 
-                    margin:2rem;
-                    height:80%;
-                    border:1px solid black;
+                    margin:1rem;
+                    height:90%;
+                   
+                    .foodCardImage {
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            width:80%;
+                            margin-bottom:0;
+                            margin-top: -1.8rem;
+                        }
+                    }
+                    h4 {
+                        margin-top: 0;
+                        text-align: center;
+                        font-size: 1.2rem;
+                        margin-bottom: -0.5rem;
+                    }
+                    p {
+                        font-size: 10px;
+                    }
+                    .foodCardFooter {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width:100%;
+                        .counter {
+                            display:flex;
+                            flex-direction: row;
+                            justify-content: space-around;
+                            background-color: $counterBtnbg-color;
+                            width:25%;
+                            padding: 0.5rem;
+                            border-radius: 10px;
+                        }
+                        .foodCardOrder {
+                            display:flex;
+                        flex-direction: row;
+                        align-items: center;
+
+                        .price{
+                            font-size: 1.2rem;
+                            margin-right: 1.2rem;
+                        }
+                            .orderBtn {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                background-color: rgb(198, 228, 198);
+                                color:green;
+                                border-radius: 10px;
+                                
+                                
+                                i {
+                                    
+                                    padding: 0.8rem
+                                }
+                                
+                            }
+                        }
+                        
+
+                    }
+                   
+    
                 }
             }
             
