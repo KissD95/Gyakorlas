@@ -57,6 +57,7 @@ body {
         width: 100%;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         ul{
             width: 50%;
             padding:0;
@@ -76,9 +77,12 @@ body {
             
         }
         .navButtons {
-            width: 50%;
+            width: 25%;
             display: flex;
-            justify-content: center;
+            justify-content: end;
+           
+            
+            
             
             
             .loginBtn {
@@ -91,6 +95,7 @@ body {
                 outline: none;
                 border: none;
                 border-radius: 15px;
+                
             }
             .signupBtn{
                 font-weight: 700;
