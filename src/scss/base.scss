@@ -146,30 +146,30 @@ body {
             height: 100%;
             font-family: 'Noto Serif', serif;
 
-
             .mainFoodCardContent {
                 margin:1.5rem;
                 margin-left: 2rem;
                 height:90%;
                 
-
-               
-
                 .mainFoodCardImage {
                     display: flex;
                     justify-content: center;
                     margin:0 auto;
                     width:100%;
+                    height: 62%;
                     img {
                         width:80%;
+                        
                         margin-bottom: 0;
                     }
                     
                 }
+
                 h1{
                     margin-top: 0;
                     
                 }
+
                 .mainFoodCardDatas{
                     display: flex;
                     justify-content: space-between;
@@ -180,9 +180,10 @@ body {
                         padding:0.4rem 1.4rem;
                         border-radius: 13px;
                         flex-grow: inherit;
-                        
                     }
+
                 }
+
                 .mainFoodCardFooter {
                     display: flex;
                     flex-direction: row;
@@ -232,8 +233,6 @@ body {
             
         }
         
-       
-       
         .foodCards {
             display: flex;
             flex-direction: column;
@@ -273,10 +272,13 @@ body {
                     .foodCardImage {
                         display: flex;
                         justify-content: center;
+                        height:45%;
                         img {
                             width:80%;
+                        
                             margin-bottom:0;
                             margin-top: -1.8rem;
+                            
                         }
                     }
                     h4 {
@@ -323,20 +325,13 @@ body {
                                 i {
                                     
                                     padding: 0.8rem
-                                }
-                                
+                                }  
                             }
                         }
-                        
-
                     }
-                   
-    
                 }
             }
-            
         }
     }
-
 }
 
